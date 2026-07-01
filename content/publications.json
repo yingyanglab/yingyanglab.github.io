@@ -1,0 +1,65 @@
+{
+  "selected_heading": "Selected Publications",
+  "selected_note": "Highlights",
+  "full_heading": "Full Publication List",
+  "full_note": "Verified records",
+  "verification_note": "The following publications were verified from public publisher and bibliographic records. Additional ORCID works can be added once a complete export is available.",
+  "items": [
+    {
+      "title": "Electrochemical Dye Switching Assisted Spectral Demixing and 3D STORM Imaging",
+      "journal": "Angewandte Chemie International Edition",
+      "year": "2026",
+      "doi": "10.1002/anie.202517001",
+      "authors": "Ying Yang, Yuanqing Ma",
+      "featured": true
+    },
+    {
+      "title": "Electrochemical Control of Fluorescence Emission: From Intensity Modulation to Single Molecule Switching for Applications in Light Microscopy",
+      "journal": "Accounts of Chemical Research",
+      "year": "2026",
+      "doi": "10.1021/acs.accounts.5c00868",
+      "authors": "Ying Yang, Yuanqing Ma, Richard D. Tilley, J. Justin Gooding",
+      "featured": false
+    },
+    {
+      "title": "Electrochemical fluorescence modulation enables simultaneous multicolour imaging",
+      "journal": "Nature Photonics",
+      "year": "2025",
+      "doi": "10.1038/s41566-025-01672-7",
+      "authors": "Ying Yang, Yuanqing Ma, Alexander Macmillan, Richard D. Tilley, J. Justin Gooding",
+      "featured": true
+    },
+    {
+      "title": "Electrochemically controlled switching of dyes for enhanced superresolution optical fluctuation imaging (EC-SOFI)",
+      "journal": "Proceedings of the National Academy of Sciences",
+      "year": "2025",
+      "doi": "10.1073/pnas.2425390122",
+      "authors": "Ying Yang, Yuanqing Ma, Richard D. Tilley, J. Justin Gooding",
+      "featured": true
+    },
+    {
+      "title": "The electrochemical modulation of single molecule fluorescence",
+      "journal": "Faraday Discussions",
+      "year": "2025",
+      "doi": "10.1039/D4FD00111G",
+      "authors": "Ying Yang, Yuanqing Ma, J. Justin Gooding",
+      "featured": false
+    },
+    {
+      "title": "Electrochemically controlled blinking of fluorophores for quantitative STORM imaging",
+      "journal": "Nature Photonics",
+      "year": "2024",
+      "doi": "10.1038/s41566-024-01431-0",
+      "authors": "Ying Yang, Yuanqing Ma, Jonathan F. Berengut, Lawrence K. Lee, Richard D. Tilley, Katharina Gaus, J. Justin Gooding",
+      "featured": true
+    },
+    {
+      "title": "Electrochemical fluorescence switching of enhanced green fluorescent protein",
+      "journal": "Biosensors and Bioelectronics",
+      "year": "2023",
+      "doi": "10.1016/j.bios.2023.115467",
+      "authors": "Ying Yang, Sanjun Fan, James E. A. Webb, Yuanqing Ma, Jesse Goyette, Xueqian Chen, Katharina Gaus, Richard D. Tilley, J. Justin Gooding",
+      "featured": false
+    }
+  ]
+}

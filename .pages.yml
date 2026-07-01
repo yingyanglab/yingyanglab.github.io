@@ -1,0 +1,251 @@
+media:
+  - name: images
+    label: Website images
+    input: assets/images
+    output: assets/images
+    categories: [image]
+    rename: safe
+  - name: research_images
+    label: Research images
+    input: assets/images/research
+    output: assets/images/research
+    categories: [image]
+    rename: safe
+
+content:
+  - name: website
+    label: Website content
+    type: group
+    items:
+      - name: site
+        label: Profile and pages
+        type: file
+        path: content/site.json
+        format: json
+        fields:
+          - name: seo
+            label: Browser and search metadata
+            type: object
+            fields:
+              - { name: title, label: Browser title, type: string, required: true }
+              - { name: description, label: Search description, type: text, required: true }
+          - name: identity
+            label: Name, position and links
+            type: object
+            fields:
+              - { name: name, label: Name, type: string, required: true }
+              - { name: initials, label: Initials, type: string, required: true }
+              - { name: position, label: Position, type: string, required: true }
+              - { name: department, label: School / department, type: string, required: true }
+              - { name: institution, label: University / institution, type: string, required: true }
+              - { name: location, label: Location, type: string, required: true }
+              - { name: email, label: Email, type: string, required: true }
+              - { name: orcid_id, label: ORCID ID, type: string, required: true }
+              - { name: orcid_url, label: ORCID link, type: string, required: true }
+              - { name: google_scholar_url, label: Google Scholar link, type: string, required: true }
+          - name: navigation
+            label: Navigation labels
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{label}"
+            fields:
+              - { name: label, label: Label, type: string, required: true }
+              - name: target
+                label: Page section
+                type: select
+                required: true
+                options:
+                  values: [home, about, research, publications, team, contact]
+          - name: profile_labels
+            label: Academic link labels
+            type: object
+            fields:
+              - { name: email, label: Email label, type: string, required: true }
+              - { name: google_scholar, label: Google Scholar label, type: string, required: true }
+              - { name: orcid, label: ORCID label, type: string, required: true }
+          - name: hero
+            label: Homepage hero
+            type: object
+            fields:
+              - { name: eyebrow, label: Title line, type: string, required: true }
+              - { name: title, label: Main title, type: string, required: true }
+              - { name: title_emphasis, label: Emphasized title, type: string, required: true }
+              - { name: subtitle, label: Subtitle, type: text, required: true }
+              - { name: primary_button_label, label: Primary button text, type: string, required: true }
+              - name: primary_button_target
+                label: Primary button section
+                type: select
+                required: true
+                options:
+                  values: [about, research, publications, team, contact]
+              - { name: secondary_button_label, label: Secondary button text, type: string, required: true }
+              - name: secondary_button_target
+                label: Secondary button section
+                type: select
+                required: true
+                options:
+                  values: [about, research, publications, team, contact]
+              - name: image
+                label: Hero image
+                type: image
+                required: true
+                options:
+                  media: images
+              - { name: image_alt, label: Hero image description, type: text, required: true }
+              - { name: image_label, label: Hero image caption, type: string, required: true }
+          - name: about
+            label: About
+            type: object
+            fields:
+              - { name: section_label, label: Section label, type: string, required: true }
+              - { name: heading, label: Heading, type: string, required: true }
+              - { name: lead, label: Introduction, type: text, required: true }
+              - name: biography_en
+                label: English biography paragraphs
+                type: text
+                list: true
+                required: true
+              - name: biography_zh
+                label: 中文个人简介段落
+                type: text
+                list: true
+                required: true
+              - { name: english_label, label: English language label, type: string, required: true }
+              - { name: chinese_label, label: Chinese language label, type: string, required: true }
+              - name: facts
+                label: Profile facts
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{label}"
+                fields:
+                  - { name: label, label: Label, type: string, required: true }
+                  - { name: value, label: Value, type: text, required: true }
+          - name: publications_section
+            label: Publications section
+            type: object
+            fields:
+              - { name: section_label, label: Section label, type: string, required: true }
+              - { name: heading, label: Heading, type: string, required: true }
+          - name: team
+            label: Team and opportunities
+            type: object
+            fields:
+              - { name: section_label, label: Section label, type: string, required: true }
+              - { name: heading, label: Heading, type: string, required: true }
+              - { name: intro, label: Introduction, type: text, required: true }
+              - name: members
+                label: Team members
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{name} — {role}"
+                fields:
+                  - { name: name, label: Name, type: string, required: true }
+                  - { name: role, label: Role, type: string, required: true }
+                  - { name: initials, label: Initials, type: string, required: true }
+                  - { name: featured, label: Featured style, type: boolean }
+              - name: opportunities
+                label: Opportunities
+                type: object
+                fields:
+                  - { name: label, label: Section label, type: string, required: true }
+                  - { name: heading, label: Heading, type: string, required: true }
+                  - { name: text, label: Description, type: text, required: true }
+                  - { name: button_label, label: Email button text, type: string, required: true }
+          - name: contact
+            label: Contact
+            type: object
+            fields:
+              - { name: section_label, label: Section label, type: string, required: true }
+              - { name: heading_line_1, label: Heading first line, type: string, required: true }
+              - { name: heading_line_2, label: Heading second line, type: string, required: true }
+              - { name: intro, label: Introduction, type: text, required: true }
+              - { name: email_label, label: Email label, type: string, required: true }
+              - { name: office_label, label: Office label, type: string, required: true }
+              - { name: office_lines, label: Office address lines, type: string, list: true, required: true }
+              - { name: profiles_label, label: Profiles label, type: string, required: true }
+          - name: footer
+            label: Footer
+            type: object
+            fields:
+              - { name: institution_line, label: Institution line, type: string, required: true }
+              - { name: back_to_top_label, label: Back-to-top link, type: string, required: true }
+
+      - name: research
+        label: Research
+        type: file
+        path: content/research.json
+        format: json
+        fields:
+          - { name: section_label, label: Section label, type: string, required: true }
+          - { name: heading, label: Heading, type: string, required: true }
+          - { name: intro, label: Introduction, type: text, required: true }
+          - name: directions
+            label: Research directions
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+            fields:
+              - { name: title, label: Title, type: string, required: true }
+              - { name: description, label: Description, type: text, required: true }
+              - name: icon
+                label: Decorative icon
+                type: select
+                required: true
+                options:
+                  values: [rings, pixels, wave, cells]
+          - { name: highlights_label, label: Highlights label, type: string, required: true }
+          - { name: highlights_heading, label: Highlights heading, type: string, required: true }
+          - name: highlights
+            label: Research highlights
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title} ({year})"
+            fields:
+              - { name: year, label: Year, type: string, required: true }
+              - { name: title, label: Title, type: string, required: true }
+              - { name: description, label: Description, type: text, required: true }
+              - { name: citation, label: Citation, type: text, required: true }
+              - { name: doi_url, label: DOI link, type: string, required: true }
+              - name: image
+                label: Research image
+                type: image
+                required: true
+                options:
+                  media: research_images
+              - { name: image_alt, label: Image description, type: text, required: true }
+
+      - name: publications
+        label: Publications
+        type: file
+        path: content/publications.json
+        format: json
+        fields:
+          - { name: selected_heading, label: Selected list heading, type: string, required: true }
+          - { name: selected_note, label: Selected list note, type: string, required: true }
+          - { name: full_heading, label: Full list heading, type: string, required: true }
+          - { name: full_note, label: Full list note, type: string, required: true }
+          - { name: verification_note, label: Publication note, type: text, required: true }
+          - name: items
+            label: Papers (drag to reorder)
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{year} — {title}"
+            fields:
+              - { name: title, label: Paper title, type: string, required: true }
+              - { name: journal, label: Journal, type: string, required: true }
+              - { name: year, label: Year, type: string, required: true }
+              - { name: doi, label: DOI, type: string, required: true }
+              - { name: authors, label: Authors, type: text }
+              - { name: featured, label: Show in selected publications, type: boolean }

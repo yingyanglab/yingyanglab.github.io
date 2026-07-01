@@ -1,0 +1,50 @@
+{
+  "section_label": "02 / Research",
+  "heading": "Research directions",
+  "intro": "Controlling fluorescence across space and time to reveal biological structure and heterogeneity.",
+  "directions": [
+    {
+      "title": "Fluorescence Modulation",
+      "description": "Tune fluorescence emission using chemical and physical methods."
+    },
+    {
+      "title": "Super-resolution Imaging",
+      "description": "Focus on single-molecule imaging."
+    },
+    {
+      "title": "Multiplex Imaging",
+      "description": "High-throughput and large-field-of-view imaging of biological samples."
+    }
+  ],
+  "highlights_label": "Research highlights",
+  "highlights_heading": "Imaging outcomes",
+  "highlights": [
+    {
+      "year": "2024",
+      "title": "Electrochemically Controlled STORM",
+      "description": "Electrochemical control of fluorophore blinking enables quantitative STORM imaging with tunable switching kinetics, reduced emitter overlap, and improved molecular counting.",
+      "citation": "Y. Yang et al., Electrochemically controlled blinking of fluorophores for quantitative STORM imaging, Nature Photonics 18, 713–720 (2024).",
+      "doi_url": "https://doi.org/10.1038/s41566-024-01431-0",
+      "image": "assets/images/research/ec-storm-2024.jpg",
+      "image_alt": "Two-color STORM image showing Alexa 647-labelled structures in green and CF680-labelled filament networks in magenta"
+    },
+    {
+      "year": "2025",
+      "title": "Electrochemically Controlled SOFI",
+      "description": "Electrochemical modulation accelerates and homogenizes dye switching, enabling faster and large-area super-resolution optical fluctuation imaging.",
+      "citation": "Y. Yang et al., Electrochemically controlled switching of dyes for enhanced superresolution optical fluctuation imaging (EC-SOFI), PNAS 122, e2425390122 (2025).",
+      "doi_url": "https://doi.org/10.1073/pnas.2425390122",
+      "image": "assets/images/research/ec-sofi-2025.png",
+      "image_alt": "Sixth-order EC-SOFI grayscale image showing a dense microtubule filament network"
+    },
+    {
+      "year": "2025",
+      "title": "Multiplex Imaging",
+      "description": "Electrochemical fluorescence response profiles distinguish spectrally overlapping fluorophores, expanding the multiplexing capability of conventional fluorescence and STED microscopy.",
+      "citation": "Y. Yang et al., Electrochemical fluorescence modulation enables simultaneous multicolour imaging, Nature Photonics 19, 718–724 (2025).",
+      "doi_url": "https://doi.org/10.1038/s41566-025-01672-7",
+      "image": "assets/images/research/multicolour-imaging-2025.jpg",
+      "image_alt": "Four-color fluorescence image of a cell showing paxillin in magenta, microtubules in yellow, actin in blue, and DNA in red"
+    }
+  ]
+}

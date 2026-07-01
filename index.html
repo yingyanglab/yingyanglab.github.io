@@ -3,51 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ying Yang — Professor at the School of Physics, Beihang University. Research in fluorescence microscopy and multiplex imaging.">
-  <title>Ying Yang | Beihang University</title>
+  <meta name="description" content="Academic homepage">
+  <title>Academic Homepage</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header" id="home">
     <nav class="nav container" aria-label="Primary navigation">
-      <a class="brand" href="#home" aria-label="Ying Yang, home">
-        <span class="brand-mark">YY</span>
-        <span class="brand-name">Ying Yang</span>
+      <a class="brand" href="#home" aria-label="Home">
+        <span class="brand-mark" id="brand-mark"></span>
+        <span class="brand-name" id="brand-name"></span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation">
         <span></span><span></span><span></span>
       </button>
-      <div class="nav-links" id="nav-links">
-        <a class="active" href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#team">Team</a>
-        <a href="#contact">Contact</a>
-      </div>
+      <div class="nav-links" id="nav-links"></div>
     </nav>
 
     <div class="hero container">
       <div class="hero-copy reveal">
-        <p class="eyebrow">Professor · School of Physics</p>
-        <h1>Seeing more.<br><em>Seeing more clearly.</em></h1>
-        <p class="hero-intro">Electrochemically controlled fluorescence microscopy for more colors, finer structures, and deeper biological insight.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#research">Explore research <span aria-hidden="true">→</span></a>
-          <a class="button button-text" href="#contact">Get in touch</a>
-        </div>
-        <div class="profile-links profile-links-hero" aria-label="Academic profiles and contact">
-          <a href="mailto:yingyang2026@buaa.edu.cn">Email</a>
-          <a href="https://scholar.google.com.au/citations?hl=en&amp;user=vQS92FoAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
-          <a href="https://orcid.org/0000-0001-6009-4748" target="_blank" rel="noopener noreferrer"><span class="orcid-dot" aria-hidden="true">iD</span> ORCID</a>
-        </div>
+        <p class="eyebrow" id="hero-eyebrow"></p>
+        <h1><span id="hero-title"></span><br><em id="hero-title-emphasis"></em></h1>
+        <p class="hero-intro" id="hero-subtitle"></p>
+        <div class="hero-actions" id="hero-actions"></div>
+        <div class="profile-links profile-links-hero" id="hero-profile-links" aria-label="Academic profiles and contact"></div>
       </div>
       <div class="hero-visual reveal">
-        <div class="micrograph">
-          <img src="assets/images/hero/01opticalimaging.jpg" alt="Single-molecule fluorescence image showing several paired orange-red emitters against a black background" width="468" height="460">
-        </div>
-        <span class="figure-label">01 — Optical imaging</span>
+        <div class="micrograph"><img id="hero-image" alt=""></div>
+        <span class="figure-label" id="hero-image-label"></span>
       </div>
     </div>
   </header>
@@ -56,19 +40,14 @@
     <section class="section about" id="about">
       <div class="container split-grid">
         <div class="section-heading reveal">
-          <p class="section-number">01 / About</p>
-          <h2>Curiosity, made visible.</h2>
+          <p class="section-number" id="about-label"></p>
+          <h2 id="about-heading"></h2>
         </div>
         <div class="about-copy reveal">
-          <p class="lead">My research explores new ways to observe, control, and understand fluorescence at fine spatial and temporal scales.</p>
-          <p>Ying Yang is a Professor in the School of Physics at Beihang University. She received her PhD in Chemistry from UNSW Sydney and subsequently continued her postdoctoral research there. Her research spans physical chemistry, biosensing, advanced fluorescence microscopy, fundamental electrochemistry, interfacial and surface chemistry, and super-resolution optical imaging.</p>
-          <p>Her current work focuses on the electrochemical control of fluorophore redox states and its application to microscopy, with an emphasis on electrically controlled fluorescence methods for multicolor and super-resolution biological imaging. She has published 12 first-author papers in journals including <em>Nature Photonics</em>, <em>PNAS</em>, <em>Nature Communications</em>, <em>Accounts of Chemical Research</em>, and <em>Angewandte Chemie International Edition</em>.</p>
-          <a class="orcid-link" href="https://orcid.org/0000-0001-6009-4748" target="_blank" rel="noopener noreferrer" aria-label="ORCID profile for Ying Yang, opens in a new tab"><span class="orcid-icon" aria-hidden="true">iD</span><span>ORCID: 0000-0001-6009-4748</span></a>
-          <dl class="facts">
-            <div><dt>Position</dt><dd>Professor</dd></div>
-            <div><dt>Institution</dt><dd>School of Physics<br>Beihang University</dd></div>
-            <div><dt>Location</dt><dd>Beijing, China</dd></div>
-          </dl>
+          <p class="lead" id="about-lead"></p>
+          <div id="biographies"></div>
+          <a class="orcid-link" id="about-orcid" target="_blank" rel="noopener noreferrer"><span class="orcid-icon" aria-hidden="true">iD</span><span></span></a>
+          <dl class="facts" id="facts"></dl>
         </div>
       </div>
     </section>
@@ -76,37 +55,13 @@
     <section class="section research" id="research">
       <div class="container">
         <div class="section-heading heading-row reveal">
-          <div><p class="section-number">02 / Research</p><h2>Research directions</h2></div>
-          <p>Developing optical and electrochemical approaches for clearer, richer views of biological systems.</p>
+          <div><p class="section-number" id="research-label"></p><h2 id="research-heading"></h2></div>
+          <p id="research-intro"></p>
         </div>
-        <div class="research-grid">
-          <article class="research-card reveal"><span>01</span><div class="card-icon rings"></div><h3>Fluorescence<br>microscopy</h3><p>Methods for observing fluorescent signals with sensitivity and precision.</p></article>
-          <article class="research-card reveal"><span>02</span><div class="card-icon pixels"></div><h3>Super-resolution<br>imaging</h3><p>Imaging strategies that reveal structures beyond the conventional diffraction limit.</p></article>
-          <article class="research-card reveal"><span>03</span><div class="card-icon wave"></div><h3>Electrochemical modulation<br>of fluorescence</h3><p>Controlling and interrogating fluorescence through electrochemical processes.</p></article>
-          <article class="research-card reveal"><span>04</span><div class="card-icon cells"></div><h3>Multiplex<br>Imaging</h3><p>Parallel imaging approaches for mapping multiple biological targets.</p></article>
-        </div>
+        <div class="research-grid" id="research-directions"></div>
         <div class="research-results" id="research-highlights">
-          <div class="results-heading reveal"><p class="section-number">Research highlights</p><h3>Imaging outcomes</h3></div>
-          <div class="results-grid">
-            <article class="result-card reveal">
-              <a class="result-image" href="https://doi.org/10.1038/s41566-024-01431-0" target="_blank" rel="noopener noreferrer" aria-label="Open the Electrochemically Controlled STORM paper">
-                <img src="assets/images/research/ec-storm-2024.jpg" alt="Two-color STORM image showing Alexa 647-labelled structures in green and CF680-labelled filament networks in magenta" width="1792" height="1741">
-              </a>
-              <div class="result-copy"><span>01 / 2024</span><h3><a href="https://doi.org/10.1038/s41566-024-01431-0" target="_blank" rel="noopener noreferrer">Electrochemically Controlled STORM <span aria-hidden="true">↗</span></a></h3><p>Electrochemical control of fluorophore blinking enables quantitative STORM imaging with tunable switching kinetics, reduced emitter overlap, and improved molecular counting.</p><p class="citation">Y. Yang et al., <em>Electrochemically controlled blinking of fluorophores for quantitative STORM imaging</em>, Nature Photonics 18, 713–720 (2024).</p></div>
-            </article>
-            <article class="result-card reveal" id="ec-sofi-2025">
-              <a class="result-image" href="https://doi.org/10.1073/pnas.2425390122" target="_blank" rel="noopener noreferrer" aria-label="Open the Electrochemically Controlled SOFI paper">
-                <img src="assets/images/research/ec-sofi-2025.png" alt="Sixth-order EC-SOFI grayscale image showing a dense microtubule filament network" width="1576" height="1595">
-              </a>
-              <div class="result-copy"><span>02 / 2025</span><h3><a href="https://doi.org/10.1073/pnas.2425390122" target="_blank" rel="noopener noreferrer">Electrochemically Controlled SOFI <span aria-hidden="true">↗</span></a></h3><p>Electrochemical modulation accelerates and homogenizes dye switching, enabling faster and large-area super-resolution optical fluctuation imaging.</p><p class="citation">Y. Yang et al., <em>Electrochemically controlled switching of dyes for enhanced superresolution optical fluctuation imaging (EC-SOFI)</em>, PNAS 122, e2425390122 (2025).</p></div>
-            </article>
-            <article class="result-card reveal">
-              <a class="result-image" href="https://doi.org/10.1038/s41566-025-01672-7" target="_blank" rel="noopener noreferrer" aria-label="Open the Multiplex Imaging paper">
-                <img src="assets/images/research/multicolour-imaging-2025.jpg" alt="Four-color fluorescence image of a cell showing paxillin in magenta, microtubules in yellow, actin in blue, and DNA in red" width="704" height="660">
-              </a>
-              <div class="result-copy"><span>03 / 2025</span><h3><a href="https://doi.org/10.1038/s41566-025-01672-7" target="_blank" rel="noopener noreferrer">Multiplex Imaging <span aria-hidden="true">↗</span></a></h3><p>Electrochemical fluorescence response profiles distinguish spectrally overlapping fluorophores, expanding the multiplexing capability of conventional fluorescence and STED microscopy.</p><p class="citation">Y. Yang et al., <em>Electrochemical fluorescence modulation enables simultaneous multicolour imaging</em>, Nature Photonics 19, 718–724 (2025).</p></div>
-            </article>
-          </div>
+          <div class="results-heading reveal"><p class="section-number" id="highlights-label"></p><h3 id="highlights-heading"></h3></div>
+          <div class="results-grid" id="highlights-grid"></div>
         </div>
       </div>
     </section>
@@ -114,42 +69,19 @@
     <section class="section publications" id="publications">
       <div class="container split-grid">
         <div class="section-heading reveal">
-          <p class="section-number">03 / Publications</p>
-          <h2>Selected work</h2>
-          <div class="academic-links publication-links" aria-label="Publication profiles and contact">
-            <a href="mailto:yingyang2026@buaa.edu.cn">Email</a>
-            <a href="https://scholar.google.com.au/citations?hl=en&amp;user=vQS92FoAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
-            <a class="orcid-link" href="https://orcid.org/0000-0001-6009-4748" target="_blank" rel="noopener noreferrer" aria-label="ORCID profile for Ying Yang, opens in a new tab"><span class="orcid-icon" aria-hidden="true">iD</span><span>ORCID: 0000-0001-6009-4748</span></a>
-          </div>
+          <p class="section-number" id="publications-label"></p>
+          <h2 id="publications-heading"></h2>
+          <div class="academic-links publication-links" id="publication-profile-links" aria-label="Publication profiles and contact"></div>
         </div>
         <div class="publication-list reveal">
           <div class="publication-group">
-            <div class="publication-group-heading"><p>Selected Publications</p><span>Highlights</span></div>
-            <article class="publication-feature">
-              <span class="publication-year">2026</span>
-              <div><h3>Electrochemical Dye Switching Assisted Spectral Demixing and 3D STORM Imaging</h3><p>Ying Yang, Yuanqing Ma · <em>Angewandte Chemie International Edition</em></p><a href="https://doi.org/10.1002/anie.202517001" target="_blank" rel="noopener noreferrer">DOI: 10.1002/anie.202517001 <span aria-hidden="true">↗</span></a></div>
-            </article>
-            <article class="publication-feature">
-              <span class="publication-year">2025</span>
-              <div><h3>Electrochemical fluorescence modulation enables simultaneous multicolour imaging</h3><p>Ying Yang, Yuanqing Ma, Alexander Macmillan, Richard D. Tilley, J. Justin Gooding · <em>Nature Photonics</em></p><a href="https://doi.org/10.1038/s41566-025-01672-7" target="_blank" rel="noopener noreferrer">DOI: 10.1038/s41566-025-01672-7 <span aria-hidden="true">↗</span></a></div>
-            </article>
-            <article class="publication-feature">
-              <span class="publication-year">2025</span>
-              <div><h3>Electrochemically controlled switching of dyes for enhanced superresolution optical fluctuation imaging (EC-SOFI)</h3><p>Ying Yang, Yuanqing Ma, Richard D. Tilley, J. Justin Gooding · <em>Proceedings of the National Academy of Sciences</em></p><a href="https://doi.org/10.1073/pnas.2425390122" target="_blank" rel="noopener noreferrer">DOI: 10.1073/pnas.2425390122 <span aria-hidden="true">↗</span></a></div>
-            </article>
+            <div class="publication-group-heading"><p id="selected-heading"></p><span id="selected-note"></span></div>
+            <div id="selected-publications"></div>
           </div>
-
           <div class="publication-group full-list">
-            <div class="publication-group-heading"><p>Full Publication List</p><span>Verified records</span></div>
-            <p class="verification-note">The following publications were verified from public publisher and bibliographic records. Additional ORCID works can be added once a complete export is available.</p>
-            <ol>
-              <li><span>2026</span><div><h3>Electrochemical Dye Switching Assisted Spectral Demixing and 3D STORM Imaging</h3><p><em>Angewandte Chemie International Edition</em> · <a href="https://doi.org/10.1002/anie.202517001" target="_blank" rel="noopener noreferrer">10.1002/anie.202517001</a></p></div></li>
-              <li><span>2026</span><div><h3>Electrochemical Control of Fluorescence Emission: From Intensity Modulation to Single Molecule Switching for Applications in Light Microscopy</h3><p><em>Accounts of Chemical Research</em> · <a href="https://doi.org/10.1021/acs.accounts.5c00868" target="_blank" rel="noopener noreferrer">10.1021/acs.accounts.5c00868</a></p></div></li>
-              <li><span>2025</span><div><h3>Electrochemical fluorescence modulation enables simultaneous multicolour imaging</h3><p><em>Nature Photonics</em> · <a href="https://doi.org/10.1038/s41566-025-01672-7" target="_blank" rel="noopener noreferrer">10.1038/s41566-025-01672-7</a></p></div></li>
-              <li><span>2025</span><div><h3>Electrochemically controlled switching of dyes for enhanced superresolution optical fluctuation imaging (EC-SOFI)</h3><p><em>Proceedings of the National Academy of Sciences</em> · <a href="https://doi.org/10.1073/pnas.2425390122" target="_blank" rel="noopener noreferrer">10.1073/pnas.2425390122</a></p></div></li>
-              <li><span>2025</span><div><h3>The electrochemical modulation of single molecule fluorescence</h3><p><em>Faraday Discussions</em> · <a href="https://doi.org/10.1039/D4FD00111G" target="_blank" rel="noopener noreferrer">10.1039/D4FD00111G</a></p></div></li>
-              <li><span>2023</span><div><h3>Electrochemical fluorescence switching of enhanced green fluorescent protein</h3><p><em>Biosensors and Bioelectronics</em> · <a href="https://doi.org/10.1016/j.bios.2023.115467" target="_blank" rel="noopener noreferrer">10.1016/j.bios.2023.115467</a></p></div></li>
-            </ol>
+            <div class="publication-group-heading"><p id="full-heading"></p><span id="full-note"></span></div>
+            <p class="verification-note" id="verification-note"></p>
+            <ol id="full-publications"></ol>
           </div>
         </div>
       </div>
@@ -158,35 +90,32 @@
     <section class="section team" id="team">
       <div class="container">
         <div class="section-heading heading-row reveal">
-          <div><p class="section-number">04 / Team</p><h2>People & collaboration</h2></div>
-          <p>We welcome curious minds interested in fluorescence microscopy, electrochemistry, and multiplex imaging.</p>
+          <div><p class="section-number" id="team-label"></p><h2 id="team-heading"></h2></div>
+          <p id="team-intro"></p>
         </div>
-        <div class="team-grid reveal">
-          <article class="profile featured"><div class="avatar">YY</div><div><h3>Ying Yang</h3><p>Professor · Principal Investigator</p></div></article>
-          <article class="profile placeholder-profile"><div class="avatar">+</div><div><h3>Team member</h3><p>[Name and role placeholder]</p></div></article>
-          <article class="profile placeholder-profile"><div class="avatar">+</div><div><h3>Team member</h3><p>[Name and role placeholder]</p></div></article>
-        </div>
+        <div class="team-grid reveal" id="team-grid"></div>
+        <aside class="opportunities-panel reveal" id="opportunities">
+          <div><p class="section-number" id="opportunities-label"></p><h3 id="opportunities-heading"></h3></div>
+          <div><p id="opportunities-text"></p><a class="button button-primary" id="opportunities-link"></a></div>
+        </aside>
       </div>
     </section>
 
     <section class="section contact" id="contact">
       <div class="container contact-grid">
-        <div class="section-heading reveal"><p class="section-number">05 / Contact</p><h2>Let’s start a<br>conversation.</h2></div>
+        <div class="section-heading reveal"><p class="section-number" id="contact-label"></p><h2><span id="contact-heading-1"></span><br><span id="contact-heading-2"></span></h2></div>
         <div class="contact-details reveal">
-          <p>For research inquiries, collaborations, or opportunities to join the group, please get in touch by email or visit the academic profiles below.</p>
-          <dl>
-            <div><dt>Email</dt><dd><a class="contact-link" href="mailto:yingyang2026@buaa.edu.cn">yingyang2026@buaa.edu.cn</a></dd></div>
-            <div><dt>Office</dt><dd>[Building and room placeholder]<br>School of Physics, Beihang University<br>Beijing, China</dd></div>
-            <div><dt>Profiles</dt><dd class="contact-profiles"><a class="contact-link" href="https://scholar.google.com.au/citations?hl=en&amp;user=vQS92FoAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a><a class="orcid-link orcid-link-dark" href="https://orcid.org/0000-0001-6009-4748" target="_blank" rel="noopener noreferrer" aria-label="ORCID profile for Ying Yang, opens in a new tab"><span class="orcid-icon" aria-hidden="true">iD</span><span>ORCID: 0000-0001-6009-4748</span></a></dd></div>
-          </dl>
+          <p id="contact-intro"></p>
+          <dl id="contact-list"></dl>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container footer-inner"><p>© <span id="year"></span> Ying Yang</p><p>School of Physics · Beihang University</p><a href="#home">Back to top ↑</a></div>
+    <div class="container footer-inner"><p>© <span id="year"></span> <span id="footer-name"></span></p><p id="footer-institution"></p><a href="#home" id="back-to-top"></a></div>
   </footer>
+  <noscript><p class="load-error">This website requires JavaScript to load its content.</p></noscript>
   <script src="script.js"></script>
 </body>
 </html>

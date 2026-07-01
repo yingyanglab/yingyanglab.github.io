@@ -1,0 +1,97 @@
+{
+  "seo": {
+    "title": "Ying Yang | Beihang University",
+    "description": "Ying Yang — Professor at the School of Physics, Beihang University. Research in fluorescence microscopy and multiplex imaging."
+  },
+  "identity": {
+    "name": "Ying Yang",
+    "initials": "YY",
+    "position": "Professor",
+    "department": "School of Physics",
+    "institution": "Beihang University",
+    "location": "Beijing, China",
+    "email": "yingyang2026@buaa.edu.cn",
+    "orcid_id": "0000-0001-6009-4748",
+    "orcid_url": "https://orcid.org/0000-0001-6009-4748",
+    "google_scholar_url": "https://scholar.google.com.au/citations?hl=en&user=vQS92FoAAAAJ&view_op=list_works&sortby=pubdate"
+  },
+  "navigation": [
+    { "label": "Home", "target": "home" },
+    { "label": "About", "target": "about" },
+    { "label": "Research", "target": "research" },
+    { "label": "Publications", "target": "publications" },
+    { "label": "Team", "target": "team" },
+    { "label": "Contact", "target": "contact" }
+  ],
+  "profile_labels": {
+    "email": "Email",
+    "google_scholar": "Google Scholar",
+    "orcid": "ORCID"
+  },
+  "hero": {
+    "eyebrow": "Professor · School of Physics",
+    "title": "YANG LAB",
+    "title_emphasis": "",
+    "subtitle": "We are an interdisciplinary research group at the interface of physics, chemistry, and the life sciences. We develop innovative fluorescence imaging technologies to address key questions in biology. By integrating electrochemical fluorescence control with advanced super-resolution microscopy, we pioneer electrically controlled fluorescence microscopy as a new imaging framework to visualize and quantify molecular interactions at the nanoscale, enable large-field-of-view imaging, and observe multiple cellular structures simultaneously.\n\nOur research focuses on the precise control of fluorescence emission across space and time using chemical and physical approaches. We aim to push the boundaries of fluorescence microscopy in resolution, imaging depth, multiplexing capability, and quantitative analysis.",
+    "primary_button_label": "Explore research",
+    "primary_button_target": "research",
+    "secondary_button_label": "Get in touch",
+    "secondary_button_target": "contact",
+    "image": "assets/images/hero/electrochemical-fluorescence-control.png",
+    "image_alt": "Conceptual diagram showing applied potential tuning fluorophore emission from low to high fluorescence intensity",
+    "image_label": "01 — Fluorescence control"
+  },
+  "about": {
+    "section_label": "01 / About",
+    "heading": "Curiosity, made visible.",
+    "lead": "My research explores new ways to observe, control, and understand fluorescence at fine spatial and temporal scales.",
+    "biography_en": [
+      "Ying Yang is a Professor in the School of Physics at Beihang University. She received her PhD in Chemistry from UNSW Sydney and subsequently continued her postdoctoral research there. Her research spans physical chemistry, biosensing, advanced fluorescence microscopy, fundamental electrochemistry, interfacial and surface chemistry, and super-resolution optical imaging.",
+      "Her current work focuses on the electrochemical control of fluorophore redox states and its application to microscopy, with an emphasis on electrically controlled fluorescence methods for multicolor and super-resolution biological imaging. She has published 12 first-author papers in journals including Nature Photonics, PNAS, Nature Communications, Accounts of Chemical Research, and Angewandte Chemie International Edition."
+    ],
+    "english_label": "English",
+    "facts": [
+      { "label": "Position", "value": "Professor" },
+      { "label": "Institution", "value": "School of Physics\nBeihang University" },
+      { "label": "Location", "value": "Beijing, China" }
+    ]
+  },
+  "publications_section": {
+    "section_label": "03 / Publications",
+    "heading": "Selected work"
+  },
+  "team": {
+    "section_label": "04 / Team",
+    "heading": "People & collaboration",
+    "intro": "We welcome curious minds interested in optical imaging, fluorescence microscopy, photo-physics.",
+    "members": [
+      { "name": "Ying Yang", "role": "Professor · Principal Investigator", "initials": "YY", "featured": true },
+      { "name": "Team member", "role": "[Name and role placeholder]", "initials": "+", "featured": false },
+      { "name": "Team member", "role": "[Name and role placeholder]", "initials": "+", "featured": false }
+    ],
+    "opportunities": {
+      "label": "Opportunities",
+      "heading": "Join the group",
+      "text": "Students and researchers interested in fluorescence microscopy, optical imaging, or biophysics are welcome to get in touch",
+      "button_label": "Ask about opportunities"
+    }
+  },
+  "contact": {
+    "section_label": "05 / Contact",
+    "heading_line_1": "Let’s start a",
+    "heading_line_2": "conversation.",
+    "intro": "For research inquiries, collaborations, or opportunities to join the group, please get in touch by email or visit the academic profiles below.",
+    "email_label": "Email",
+    "office_label": "Office",
+    "office_lines": [
+      "北航沙河校区C座",
+      "物理学院",
+      "北京航空航天大学"
+    ],
+    "profiles_label": "Profiles"
+  },
+  "footer": {
+    "institution_line": "School of Physics · Beihang University",
+    "back_to_top_label": "Back to top ↑"
+  }
+}
