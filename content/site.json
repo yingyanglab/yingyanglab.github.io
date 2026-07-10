@@ -30,8 +30,8 @@
   },
   "hero": {
     "eyebrow": "Professor · School of Physics",
-    "title": "YANG LAB",
-    "title_emphasis": "",
+    "title": "Ying Yang",
+    "title_emphasis": "Fluorescence Modulation and Imaging Lab",
     "subtitle": "We are an interdisciplinary research group at the interface of physics, chemistry, and the life sciences. We develop innovative fluorescence imaging technologies to address key questions in biology. By integrating electrochemical fluorescence control with advanced super-resolution microscopy, we pioneer electrically controlled fluorescence microscopy as a new imaging framework to visualize and quantify molecular interactions at the nanoscale, enable large-field-of-view imaging, and observe multiple cellular structures simultaneously.\n\nOur research focuses on the precise control of fluorescence emission across space and time using chemical and physical approaches. We aim to push the boundaries of fluorescence microscopy in resolution, imaging depth, multiplexing capability, and quantitative analysis.",
     "primary_button_label": "Explore research",
     "primary_button_target": "research",
